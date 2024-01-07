@@ -13,11 +13,84 @@
       </h2>
     </section>
 
-    <section id="realisation" class="h-screen w-full flex flex-col items-center justify-center snap-start">
+    <section id="realisation" class="h-screen w-full flex flex-col items-center justify-center snap-center">
       <h2 class="text-4xl font-bold dark:text-white">Réalisations</h2>
-      <p>
-        Lorem ipsum dolor si
-      </p>
+
+      <div id="slider" class="flex flex-nowrap items-center justify-start gap-5 max-w-[80%] overflow-x-scroll snap-x snap-mandatory whitespace-nowrap">
+          <div class="card-realisation snap-center flex flex-col items-center justify-center">
+            <div class="card-realisation__img">
+              <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="card-realisation__content">
+              <h3 class="card-realisation__title">Titre</h3>
+              <p class="card-realisation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+          </div>
+          <div class="card-realisation snap-center flex flex-col items-center justify-center">
+            <div class="card-realisation__img">
+              <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="card-realisation__content">
+              <h3 class="card-realisation__title">Titre</h3>
+              <p class="card-realisation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+          </div>
+          <div class="card-realisation snap-center flex flex-col items-center justify-center">
+            <div class="card-realisation__img">
+              <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="card-realisation__content">
+              <h3 class="card-realisation__title">Titre</h3>
+              <p class="card-realisation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+          </div>
+          <div class="card-realisation snap-center flex flex-col items-center justify-center">
+            <div class="card-realisation__img">
+              <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="card-realisation__content">
+              <h3 class="card-realisation__title">Titre</h3>
+              <p class="card-realisation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+          </div>
+          <div class="card-realisation snap-center flex flex-col items-center justify-center">
+            <div class="card-realisation__img">
+              <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="card-realisation__content">
+              <h3 class="card-realisation__title">Titre</h3>
+              <p class="card-realisation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+          </div>
+          <div class="card-realisation snap-center flex flex-col items-center justify-center">
+            <div class="card-realisation__img">
+              <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="card-realisation__content">
+              <h3 class="card-realisation__title">Titre</h3>
+              <p class="card-realisation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+          </div>
+          <div class="card-realisation snap-center flex flex-col items-center justify-center">
+            <div class="card-realisation__img">
+              <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="card-realisation__content">
+              <h3 class="card-realisation__title">Titre</h3>
+              <p class="card-realisation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+          </div>
+          <div class="card-realisation snap-center flex flex-col items-center justify-center">
+            <div class="card-realisation__img">
+              <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="card-realisation__content">
+              <h3 class="card-realisation__title">Titre</h3>
+              <p class="card-realisation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+          </div>
+      </div>
+      
     </section>
 
     <section id="competence" class="h-screen w-full flex flex-col items-center justify-center snap-center">

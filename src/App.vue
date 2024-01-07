@@ -1,8 +1,10 @@
 <script setup>
 import {RouterLink, RouterView} from 'vue-router'
+
 </script>
 
 <template>
+  <!--
   <header class="px-7 py-5 w-full min-h-10  flex justify-between items-center gap-x-64 shadow-lg rounded-3xl	">
     <div>
       <h3>Léo</h3>
@@ -17,6 +19,7 @@ import {RouterLink, RouterView} from 'vue-router'
       <h3>Language</h3>
     </div>
   </header>
+  -->
 
   <RouterView/>
 </template>
