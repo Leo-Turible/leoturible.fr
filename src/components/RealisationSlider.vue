@@ -42,6 +42,7 @@ const scrollRight = () => {
           :title="card.title"
           :description="card.description"
           :image="card.image"
+          :url="card.url"
       />
 
       <div class="w-1/2 flex-shrink-0"></div>

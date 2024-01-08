@@ -32,31 +32,36 @@ const cards = [
     id: 1,
     title: 'Fallout',
     description: 'Ce site a été conçu sur le thème de l\'univers de Fallout. Il a été réalisé en HTML, CSS et JavaScript dans le cadre d\'un projet en cours. J\'y ai fait mes premiers pas avec JavaScript afin d\'implémenter un système de musique que l\'on peut mute/unmute et afin de permettre à l\'utilisateur de savoir sur quelle page il se trouve grâce à une classe active dans le header.html.',
-    image: '/public/fallout.webp'
+    image: '/public/fallout.webp',
+    url: 'https://fallout.leoturible.fr'
   },
   {
     id: 2,
     title: 'Zelda',
     description: 'Ce site a été conçu sur le thème de l\'univers de Zelda. Le but était d\'apprendre à mettre en place des bases de données, de créer une zone de recherche pour les visiteurs et de créer une partie pour les administrateurs, ainsi que l\'utilisation du framework Bootstrap.\n' + '\n',
-    image: '/public/zelda.webp'
+    image: '/public/zelda.webp',
+    url: 'https://zelda.leoturible.fr'
   },
   {
     id: 3,
     title: 'Ghibli',
     description: 'Ce site a été conçu sur le thème de l\'univers des studios Ghibli. Il a été réalisé en HTML, CSS et PHP dans le cadre d\'un projet en cours. Le but était de créer un formulaire fonctionnel et sécurisé, ainsi qu\'une gallerie d\'image avec la possibilité d\'en ajouter.\n' + '\n',
-    image: '/public/ghibli.webp'
+    image: '/public/ghibli.webp',
+    url: 'https://ghibli.leoturible.fr'
   },
   {
     id: 4,
     title: 'Parooling',
     description: 'Ce site a été conçu dans le cadre d\'un projet en cours. Il a été réalisé en HTML, CSS et PHP. Le but était de créer un site de covoiturage avec un système de connexion et d\'inscription fonctionnel, ainsi qu\'un système de recherche de trajet.\n' + '\n',
-    image: '/public/parooling_desktop.png'
+    image: '/public/parooling_desktop.png',
+    url: 'https://parooling.leoturible.fr'
   },
   {
     id: 5,
     title: 'Agenda',
     description: 'Ce site a été conçu dans le cadre d\'un projet en cours. Il a été réalisé avec le framework backend Symfony. Le but était de créer un site dédié aux étudiants de l\'IUT de Troyes, avec un système de connexion et d\'inscription fonctionnel, ainsi qu\'un système de calendrier pour ajouter des évènements.\n' + '\n',
-    image: '/public/sae301.png'
+    image: '/public/sae301.png',
+    url: 'https://sae301.leoturible.fr'
   }
 ]
 </script>
