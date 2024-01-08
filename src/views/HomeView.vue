@@ -1,5 +1,26 @@
 <script setup>
+import RealisationSlider from '../components/RealisationSlider.vue'
 
+const cards = [
+  {
+    id: 1,
+    title: 'Titre 1',
+    description: 'Ce site a été conçu sur le thème de l\'univers de Fallout. Il a été réalisé en HTML, CSS et JavaScript dans le cadre d\'un projet en cours. J\'y ai fait mes premiers pas avec JavaScript afin d\'implémenter un système de musique que l\'on peut mute/unmute et afin de permettre à l\'utilisateur de savoir sur quelle page il se trouve grâce à une classe active dans le header.html.',
+    image: '/public/fallout.webp'
+  },
+  {
+    id: 2,
+    title: 'Titre 2',
+    description: 'Ce site a été conçu sur le thème de l\'univers de Zelda. Le but était d\'apprendre à mettre en place des bases de données, de créer une zone de recherche pour les visiteurs et de créer une partie pour les administrateurs, ainsi que l\'utilisation du framework Bootstrap.\n' + '\n',
+    image: '/public/image2.webp'
+  },
+  {
+    id: 3,
+    title: 'Titre 3',
+    description: 'Description 3',
+    image: '/public/image3.webp'
+  }
+]
 </script>
 
 <template>
@@ -13,87 +34,9 @@
       </h2>
     </section>
 
-    <section id="realisation" class="h-screen w-full flex flex-col items-center justify-center snap-center">
+    <section id="realisation" class="h-screen w-full flex flex-col items-center justify-around snap-center">
       <h2 class="text-4xl font-bold dark:text-white">Réalisations</h2>
-
-      <div id="slider"
-           class="flex flex-nowrap items-center justify-start gap-8 w-[80%] overflow-x-scroll snap-x snap-mandatory">
-        <div class="w-1/2 flex-shrink-0"></div>
-
-        <div class="card-realisation snap-center flex flex-col items-center justify-start h-auto max-w-72 w-full min-h-96 bg-slate-300 p-1.5 rounded-xl flex-shrink-0">
-          <div class="card-realisation__img max-w-full">
-            <img src="/public/fallout.webp" alt="" class="rounded">
-          </div>
-          <div class="card-realisation__content ">
-            <h3 class="card-realisation__title text-center">Titre</h3>
-            <p class="card-realisation__description text-justify">Ce site a été conçu sur le thème de l'univers de Fallout. Il a été
-              réalisé en HTML, CSS et JavaScript dans le cadre d'un projet en cours. J'y ai fait mes premiers pas avec
-              JavaScript afin d'implémenter un système de musique que l'on peut mute/unmute et afin de permettre à
-              l'utilisateur de savoir sur quelle page il se trouve grâce à une classe active dans le header.html.
-            </p>
-          </div>
-        </div>
-
-        <div class="card-realisation snap-center flex flex-col items-center justify-start h-auto max-w-72 w-full min-h-96 bg-slate-300 p-1.5 rounded-xl flex-shrink-0">
-          <div class="card-realisation__img max-w-full">
-            <img src="/public/fallout.webp" alt="" class="rounded">
-          </div>
-          <div class="card-realisation__content ">
-            <h3 class="card-realisation__title text-center">Titre</h3>
-            <p class="card-realisation__description text-justify">Ce site a été conçu sur le thème de l'univers de Fallout. Il a été
-              réalisé en HTML, CSS et JavaScript dans le cadre d'un projet en cours. J'y ai fait mes premiers pas avec
-              JavaScript afin d'implémenter un système de musique que l'on peut mute/unmute et afin de permettre à
-              l'utilisateur de savoir sur quelle page il se trouve grâce à une classe active dans le header.html.
-            </p>
-          </div>
-        </div>
-
-        <div class="card-realisation snap-center flex flex-col items-center justify-start h-auto max-w-72 w-full min-h-96 bg-slate-300 p-1.5 rounded-xl flex-shrink-0">
-          <div class="card-realisation__img max-w-full">
-            <img src="/public/fallout.webp" alt="" class="rounded">
-          </div>
-          <div class="card-realisation__content ">
-            <h3 class="card-realisation__title text-center">Titre</h3>
-            <p class="card-realisation__description text-justify">Ce site a été conçu sur le thème de l'univers de Fallout. Il a été
-              réalisé en HTML, CSS et JavaScript dans le cadre d'un projet en cours. J'y ai fait mes premiers pas avec
-              JavaScript afin d'implémenter un système de musique que l'on peut mute/unmute et afin de permettre à
-              l'utilisateur de savoir sur quelle page il se trouve grâce à une classe active dans le header.html.
-            </p>
-          </div>
-        </div>
-
-        <div class="card-realisation snap-center flex flex-col items-center justify-start h-auto max-w-72 w-full min-h-96 bg-slate-300 p-1.5 rounded-xl flex-shrink-0">
-          <div class="card-realisation__img max-w-full">
-            <img src="/public/fallout.webp" alt="" class="rounded">
-          </div>
-          <div class="card-realisation__content ">
-            <h3 class="card-realisation__title text-center">Titre</h3>
-            <p class="card-realisation__description text-justify">Ce site a été conçu sur le thème de l'univers de Fallout. Il a été
-              réalisé en HTML, CSS et JavaScript dans le cadre d'un projet en cours. J'y ai fait mes premiers pas avec
-              JavaScript afin d'implémenter un système de musique que l'on peut mute/unmute et afin de permettre à
-              l'utilisateur de savoir sur quelle page il se trouve grâce à une classe active dans le header.html.
-            </p>
-          </div>
-        </div>
-
-        <div class="card-realisation snap-center flex flex-col items-center justify-start h-auto max-w-72 w-full min-h-96 bg-slate-300 p-1.5 rounded-xl flex-shrink-0">
-          <div class="card-realisation__img max-w-full">
-            <img src="/public/fallout.webp" alt="" class="rounded">
-          </div>
-          <div class="card-realisation__content ">
-            <h3 class="card-realisation__title text-center">Titre</h3>
-            <p class="card-realisation__description text-justify">Ce site a été conçu sur le thème de l'univers de Fallout. Il a été
-              réalisé en HTML, CSS et JavaScript dans le cadre d'un projet en cours. J'y ai fait mes premiers pas avec
-              JavaScript afin d'implémenter un système de musique que l'on peut mute/unmute et afin de permettre à
-              l'utilisateur de savoir sur quelle page il se trouve grâce à une classe active dans le header.html.
-            </p>
-          </div>
-        </div>
-
-        <div class="w-1/2 flex-shrink-0"></div>
-      </div>
-
-
+      <RealisationSlider :cards="cards" />
     </section>
 
     <section id="competence" class="h-screen w-full flex flex-col items-center justify-center snap-center">
