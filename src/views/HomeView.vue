@@ -1,31 +1,69 @@
 <script setup>
 import RealisationSlider from '../components/RealisationSlider.vue'
+import { onMounted, nextTick } from 'vue';
 
+onMounted(() => {
+  console.log('onMounted called');
+  nextTick(() => {
+    console.log('nextTick called');
+    const elements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+      console.log('IntersectionObserver callback called');
+      entries.forEach(entry => {
+        console.log('IntersectionObserver entry:', entry);
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        } else {
+          entry.target.classList.remove('is-visible');
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+
+    elements.forEach(element => {
+      observer.observe(element);
+    });
+  });
+});
 const cards = [
   {
     id: 1,
-    title: 'Titre 1',
+    title: 'Fallout',
     description: 'Ce site a été conçu sur le thème de l\'univers de Fallout. Il a été réalisé en HTML, CSS et JavaScript dans le cadre d\'un projet en cours. J\'y ai fait mes premiers pas avec JavaScript afin d\'implémenter un système de musique que l\'on peut mute/unmute et afin de permettre à l\'utilisateur de savoir sur quelle page il se trouve grâce à une classe active dans le header.html.',
     image: '/public/fallout.webp'
   },
   {
     id: 2,
-    title: 'Titre 2',
+    title: 'Zelda',
     description: 'Ce site a été conçu sur le thème de l\'univers de Zelda. Le but était d\'apprendre à mettre en place des bases de données, de créer une zone de recherche pour les visiteurs et de créer une partie pour les administrateurs, ainsi que l\'utilisation du framework Bootstrap.\n' + '\n',
-    image: '/public/image2.webp'
+    image: '/public/zelda.webp'
   },
   {
     id: 3,
-    title: 'Titre 3',
-    description: 'Description 3',
-    image: '/public/image3.webp'
+    title: 'Ghibli',
+    description: 'Ce site a été conçu sur le thème de l\'univers des studios Ghibli. Il a été réalisé en HTML, CSS et PHP dans le cadre d\'un projet en cours. Le but était de créer un formulaire fonctionnel et sécurisé, ainsi qu\'une gallerie d\'image avec la possibilité d\'en ajouter.\n' + '\n',
+    image: '/public/ghibli.webp'
+  },
+  {
+    id: 4,
+    title: 'Parooling',
+    description: 'Ce site a été conçu dans le cadre d\'un projet en cours. Il a été réalisé en HTML, CSS et PHP. Le but était de créer un site de covoiturage avec un système de connexion et d\'inscription fonctionnel, ainsi qu\'un système de recherche de trajet.\n' + '\n',
+    image: '/public/parooling_desktop.png'
+  },
+  {
+    id: 5,
+    title: 'Agenda',
+    description: 'Ce site a été conçu dans le cadre d\'un projet en cours. Il a été réalisé avec le framework backend Symfony. Le but était de créer un site dédié aux étudiants de l\'IUT de Troyes, avec un système de connexion et d\'inscription fonctionnel, ainsi qu\'un système de calendrier pour ajouter des évènements.\n' + '\n',
+    image: '/public/sae301.png'
   }
 ]
 </script>
 
 <template>
   <main class="snap-y snap-mandatory h-screen overflow-x-hidden">
-    <section id="about" class="h-screen w-full flex flex-col items-center justify-center snap-start">
+    <section id="about" class="fade-in h-screen w-full flex flex-col items-center justify-center snap-start">
       <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl ">
         <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-300 from-sky-400">Léo Turible</span>
       </h1>
@@ -34,19 +72,19 @@ const cards = [
       </h2>
     </section>
 
-    <section id="realisation" class="h-screen w-full flex flex-col items-center justify-around snap-center">
+    <section id="realisation" class="fade-in h-screen w-full flex flex-col items-center justify-around snap-center">
       <h2 class="text-4xl font-bold dark:text-white">Réalisations</h2>
       <RealisationSlider :cards="cards" />
     </section>
 
-    <section id="competence" class="h-screen w-full flex flex-col items-center justify-center snap-center">
+    <section id="competence" class="fade-in h-screen w-full flex flex-col items-center justify-center snap-center">
       <h2 class="text-4xl font-bold dark:text-white">Compétences</h2>
       <p>
         Lorem ipsum dolor si
       </p>
     </section>
 
-    <section id="contact" class="h-screen w-full flex flex-col items-center justify-around snap-center">
+    <section id="contact" class="fade-in h-screen w-full flex flex-col items-center justify-around snap-center">
       <div class="w-full text-center self-start">
         <h2 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
           Contact</h2>
