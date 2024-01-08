@@ -68,6 +68,7 @@ const cards = [
 
 <template>
   <main class="snap-y snap-mandatory h-screen overflow-x-hidden">
+
     <section id="about" class="fade-in h-screen w-full flex flex-col items-center justify-center snap-start">
       <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl ">
         <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-300 from-sky-400">Léo Turible</span>
