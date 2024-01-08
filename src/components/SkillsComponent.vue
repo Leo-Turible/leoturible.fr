@@ -7,7 +7,7 @@ const skills = [
       {name: 'CSS', icon: 'css3'},
       {name: 'JavaScript', icon: 'js'},
       {name: 'Sass', icon: 'sass'},
-      {name: 'Tailwind CSS', icon: '/icons/tailwindcss.png'},
+      {name: 'Tailwind CSS', icon: '/icons/tailwindcss.svg'},
       {name: 'Vue.js', icon: 'vuejs'},
     ],
   },
@@ -16,7 +16,7 @@ const skills = [
     skills: [
       {name: 'PHP', icon: 'php'},
       {name: 'SYMFONY', icon: 'symfony'},
-      {name: 'MYSQL', icon: '/icons/mysql.png'},
+      {name: 'MYSQL', icon: '/icons/mysql.svg'},
     ],
   },
   {
@@ -30,7 +30,8 @@ const skills = [
     skills: [
       {name: 'Git', icon: 'git-alt'},
       {name: 'GitHub', icon: 'github'},
-      {name: 'Visual Studio Code', icon: '/icons/vscode.png'},
+      {name: 'Visual Studio Code', icon: '/icons/vscode.svg'},
+      {name: 'PhpStorm', icon: '/icons/phpstorm.svg'},
       {name: 'Figma', icon: 'figma'},
     ],
   },
@@ -43,7 +44,7 @@ const skills = [
       <h3 class="text-2xl font-bold dark:text-white">{{ skillGroup.category }}</h3>
       <div class="skills-list">
         <div v-for="skill in skillGroup.skills" :key="skill.name" class="skill-item">
-          <img v-if="skill.icon.startsWith('/')" :src="skill.icon" class="w-16 h-16" alt="" />
+          <img v-if="skill.icon.startsWith('/')" :src="skill.icon" class="w-16 h-16" :alt="`Icone de ${skill.name}`" />
           <font-awesome-icon v-else :icon="['fab', skill.icon]" class="w-16 h-16" />
           <p>{{ skill.name }}</p>
         </div>
