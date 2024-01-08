@@ -64,9 +64,4 @@ const skills = [
   flex-direction: column;
   align-items: center;
 }
-
-.skill-icon {
-  width: 50px;
-  height: 50px;
-}
 </style>
