@@ -1,6 +1,7 @@
 <script setup>
 import RealisationSlider from '../components/RealisationSlider.vue'
-import { onMounted, nextTick } from 'vue';
+import SkillsComponent from '../components/SkillsComponent.vue'
+import {onMounted, nextTick} from 'vue';
 
 onMounted(() => {
   console.log('onMounted called');
@@ -64,6 +65,7 @@ const cards = [
     url: 'https://sae301.leoturible.fr'
   }
 ]
+
 </script>
 
 <template>
@@ -80,14 +82,12 @@ const cards = [
 
     <section id="realisation" class="fade-in h-screen w-full flex flex-col items-center justify-around snap-center">
       <h2 class="text-4xl font-bold dark:text-white">Réalisations</h2>
-      <RealisationSlider :cards="cards" />
+      <RealisationSlider :cards="cards"/>
     </section>
 
     <section id="competence" class="fade-in h-screen w-full flex flex-col items-center justify-center snap-center">
       <h2 class="text-4xl font-bold dark:text-white">Compétences</h2>
-      <p>
-        Lorem ipsum dolor si
-      </p>
+      <SkillsComponent/>
     </section>
 
     <section id="contact" class="fade-in h-screen w-full flex flex-col items-center justify-around snap-center">
