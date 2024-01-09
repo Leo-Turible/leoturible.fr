@@ -81,7 +81,8 @@ main {
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(128, 128, 128, 0.2);
+    background: rgba(0, 102, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     animation: animate 25s linear infinite;
     bottom: -150px;
 }
