@@ -7,7 +7,7 @@ const skills = [
       {name: 'CSS', icon: 'css3'},
       {name: 'JavaScript', icon: 'js'},
       {name: 'Sass', icon: 'sass'},
-      {name: 'Tailwind CSS', icon: '/icons/tailwindcss.svg'},
+      {name: 'Tailwind CSS', icon: '/ico/tailwindcss.svg'},
       {name: 'Vue.js', icon: 'vuejs'},
     ],
   },
@@ -16,7 +16,7 @@ const skills = [
     skills: [
       {name: 'PHP', icon: 'php'},
       {name: 'SYMFONY', icon: 'symfony'},
-      {name: 'MYSQL', icon: '/icons/mysql.svg'},
+      {name: 'MYSQL', icon: '/ico/mysql.svg'},
     ],
   },
   {
@@ -30,8 +30,8 @@ const skills = [
     skills: [
       {name: 'Git', icon: 'git-alt'},
       {name: 'GitHub', icon: 'github'},
-      {name: 'Visual Studio Code', icon: '/icons/vscode.svg'},
-      {name: 'PhpStorm', icon: '/icons/phpstorm.svg'},
+      {name: 'Visual Studio Code', icon: '/ico/vscode.svg'},
+      {name: 'PhpStorm', icon: '/ico/phpstorm.svg'},
       {name: 'Figma', icon: 'figma'},
     ],
   },

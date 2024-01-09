@@ -28,9 +28,8 @@ const scrollRight = () => {
 
 <template>
   <div class="relative flex items-center justify-center">
-    <button @click="scrollLeft" class="absolute left-36 z-50"><</button>
-    <button @click="scrollRight" class="absolute right-36 z-50">></button>
-
+    <font-awesome-icon @click="scrollLeft" class="absolute left-36 z-50" :icon="['fas', 'chevron-left']" />
+    <font-awesome-icon @click="scrollRight" class="absolute right-36 z-50" :icon="['fas', 'chevron-right']"/>
     <div id="slider"
          class="flex flex-nowrap items-start justify-start gap-16 w-[80%] overflow-x-scroll snap-x snap-mandatory">
 
@@ -59,10 +58,11 @@ const scrollRight = () => {
   scrollbar-width: none;
 }
 
-button {
+.fa-chevron-left, .fa-chevron-right {
   background-color: #ffffff;
   border: none;
   border-radius: 50%;
+  padding: 15px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -75,11 +75,11 @@ button {
   transition: opacity 0.3s ease;
 }
 
-button:hover {
+.fa-chevron-left:hover, .fa-chevron-right:hover {
   opacity: 1;
 }
 
-button:active {
+.fa-chevron-left:active, .fa-chevron-right:active {
   transform: scale(0.95);
 }
 </style>
