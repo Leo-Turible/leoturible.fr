@@ -69,7 +69,7 @@ const cards = [
 
 onMounted(() => {
   const phoneInput = document.getElementById('phone');
-  phoneInput.addEventListener('input', function(e) {
+  phoneInput.addEventListener('input', function (e) {
     let value = e.target.value.replace(/\D/g, '');
     if (value.length > 10) {
       value = value.slice(0, 10);
@@ -87,9 +87,27 @@ onMounted(() => {
       <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl ">
         <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-300 from-sky-400">Léo Turible</span>
       </h1>
-      <h2 class="text-4xl font-bold dark:text-white">
+      <h2 class="text-4xl font-bold dark:text-white text-center">
         Full-Stack Developer Student
       </h2>
+    </section>
+
+    <section id="presentation" class="fade-in h-screen w-full flex flex-col items-center justify-around snap-center">
+      <div class="w-full text-center self-start">
+        <h2 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
+          Présentation</h2>
+      </div>
+      <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center w-full">
+        <div class="flex items-center justify-center sm:flex-1">
+          <img src="/fallout.webp" alt="Photo de profil" class="w-48 h-48 rounded-full object-cover mb-4 sm:mb-0">
+        </div>
+        <div class="flex items-center justify-center sm:flex-1">
+          <p class="text-gray-900 dark:text-white text-justify w-2/3">
+            Bonjour, je suis Léo Turible, un étudiant en développement Full-Stack. J'ai une passion pour la création de
+            solutions logicielles efficaces et l'apprentissage de nouvelles technologies.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="realisation" class="fade-in h-screen w-full flex flex-col items-center justify-around snap-center">
@@ -107,7 +125,7 @@ onMounted(() => {
         <h2 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
           Contact</h2>
       </div>
-      <ContactForm />
+      <ContactForm/>
     </section>
 
   </main>
