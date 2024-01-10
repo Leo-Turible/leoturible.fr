@@ -157,7 +157,7 @@ onMounted(() => {
             un email</a>
         </div>
       </div>
-      <footer class="absolute bottom-0 h-10 w-full flex items-center justify-center bg-slate-500 dark:bg-gray-800">
+      <footer class="absolute bottom-0 h-10 w-full opacity-75 flex items-center justify-center bg-slate-500 dark:bg-gray-800">
         <p class="text-gray-100 dark:text-white">© 2021 Léo Turible. Tous droits réservés.</p>
       </footer>
     </section>
