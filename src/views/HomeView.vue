@@ -93,7 +93,7 @@ onMounted(() => {
     </section>
 
     <section id="presentation"
-             class="fade-in h-screen w-full flex flex-col items-center justify-around snap-center px-24">
+             class="fade-in h-screen w-full flex flex-col items-center justify-around snap-center px-4 sm:px-8 md:px-24">
       <div class="w-full text-center self-start">
         <h2 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
           Présentation</h2>
@@ -103,7 +103,7 @@ onMounted(() => {
           <img src="/fallout.webp" alt="Photo de profil" class="w-48 h-48 rounded-full object-cover mb-4 sm:mb-0">
         </div>
         <div
-            class="flex flex-col items-center justify-center sm:flex-1 gap-5 sm:basis-2/3 px-10 py-5 bg-slate-100 rounded-xl shadow-xl">
+            class="flex flex-col items-center justify-center sm:flex-1 gap-5 sm:basis-2/3 px-2 sm:px-10 py-5 bg-slate-100 rounded-xl shadow-xl">
           <p class="text-gray-900 dark:text-white text-justify">
             Je suis Léo Turible, j'ai 20 ans, et je suis en 2ème année de mon BUT Métier du Multimédia et de l'Internet
             à Troyes. Depuis mon plus jeune âge, je suis passionné par l'informatique et l'innovation technologique.

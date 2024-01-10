@@ -39,13 +39,13 @@ const skills = [
 </script>
 
 <template>
-  <div class="px-10 py-5 bg-slate-100 rounded-xl shadow-xl">
+  <div class="mx-10 px-10 py-5 bg-slate-100 rounded-xl shadow-xl flex flex-col">
     <div v-for="skillGroup in skills" :key="skillGroup.category">
-      <h3 class="text-2xl font-bold dark:text-white">{{ skillGroup.category }}</h3>
-      <div class="skills-list">
+      <h3 class="text-2xl font-bold dark:text-white text-center sm:text-left mt-8">{{ skillGroup.category }}</h3>
+      <div class="skills-list flex flex-wrap justify-center sm:justify-start">
         <div v-for="skill in skillGroup.skills" :key="skill.name" class="skill-item">
-          <img v-if="skill.icon.startsWith('/')" :src="skill.icon" class="w-16 h-16" :alt="`Icone de ${skill.name}`" />
-          <font-awesome-icon v-else :icon="['fab', skill.icon]" class="w-16 h-16" />
+          <img v-if="skill.icon.startsWith('/')" :src="skill.icon" class="w-10 h-10" :alt="`Icone de ${skill.name}`" />
+          <font-awesome-icon v-else :icon="['fab', skill.icon]" class="w-10 h-10" />
           <p>{{ skill.name }}</p>
         </div>
       </div>
