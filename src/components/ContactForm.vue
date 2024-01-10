@@ -41,14 +41,18 @@ const sendEmail = (e) => {
 
 onMounted(() => {
   const phoneInput = document.getElementById('phone');
-  phoneInput.addEventListener('input', function(e) {
-    let value = e.target.value.replace(/\D/g, '');
-    if (value.length > 10) {
-      value = value.slice(0, 10);
-    }
-    value = value.replace(/(\d{2})(?=\d)/g, '$1 ');
-    e.target.value = value;
-  });
+  const formatPhone = function(e) {
+    setTimeout(() => {
+      let value = e.target.value.replace(/\D/g, '');
+      if (value.length > 10) {
+        value = value.slice(0, 10);
+      }
+      value = value.replace(/(\d{2})(?=\d)/g, '$1 ');
+      e.target.value = value;
+    }, 100);
+  };
+  phoneInput.addEventListener('input', formatPhone);
+  phoneInput.addEventListener('change', formatPhone);
 });
 
 
