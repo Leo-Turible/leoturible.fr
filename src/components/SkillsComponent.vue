@@ -39,7 +39,7 @@ const skills = [
 </script>
 
 <template>
-  <div>
+  <div class="px-10 py-5 bg-slate-100 rounded-xl shadow-xl">
     <div v-for="skillGroup in skills" :key="skillGroup.category">
       <h3 class="text-2xl font-bold dark:text-white">{{ skillGroup.category }}</h3>
       <div class="skills-list">

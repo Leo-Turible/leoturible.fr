@@ -60,7 +60,7 @@ onMounted(() => {
 
 <template>
   <div class="flex flex-col items-center justify-center w-full">
-    <form ref="form" @submit.prevent="sendEmail"  class="flex flex-col items-center justify-center">
+    <form ref="form" @submit.prevent="sendEmail"  class="flex flex-col items-center justify-center px-10 py-5 bg-slate-100 rounded-xl shadow-xl">
       <div class="grid gap-6 mb-6 md:grid-cols-2">
         <div>
           <label for="first_name"
