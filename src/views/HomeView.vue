@@ -158,11 +158,11 @@ onMounted(() => {
 </template>
 
 <style scoped>
-main::-webkit-scrollbar, #slider::-webkit-scrollbar {
+main::-webkit-scrollbar {
   display: none;
 }
 
-main, #slider {
+main {
   scrollbar-width: none;
 }
 </style>
