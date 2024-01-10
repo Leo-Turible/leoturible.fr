@@ -143,22 +143,22 @@ onMounted(() => {
       <ContactForm/>
     </section>
 
-    <section class="fade-in h-screen w-full flex flex-col items-center justify-between snap-center">
-      <div class=" w-full text-center self-start ">
-        <h2 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
+    <section class="relative fade-in h-screen w-full flex flex-col items-center justify-center snap-center">
+      <div class="h-full w-full text-center flex flex-col items-center justify-start gap-28">
+        <h2 class="mt-8 mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
           Réseaux sociaux</h2>
         <div class="flex flex-col items-center justify-center gap-5">
-          <a href="https://www.linkedin.com/in/leo-turible/" target="_blank"
-             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/leoturible/" target="_blank"
+             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110"><font-awesome-icon :icon="['fab', 'linkedin']" /> LinkedIn</a>
           <a href="https://github.com/Leo-Turible" target="_blank"
-             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110">GitHub</a>
+             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110"><font-awesome-icon :icon="['fab', 'github']" /> GitHub</a>
           <a href="mailto:turibleleo@gmail.com"
-             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110">Envoyez-moi
+             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110"><font-awesome-icon icon="envelope" />  Envoyez-moi
             un email</a>
         </div>
       </div>
-      <footer class="h-10 w-full flex items-center justify-center bg-slate-500 dark:bg-gray-800">
-        <p class="text-gray-900 dark:text-white">© 2021 Léo Turible. Tous droits réservés.</p>
+      <footer class="absolute bottom-0 h-10 w-full flex items-center justify-center bg-slate-500 dark:bg-gray-800">
+        <p class="text-gray-100 dark:text-white">© 2021 Léo Turible. Tous droits réservés.</p>
       </footer>
     </section>
   </main>
