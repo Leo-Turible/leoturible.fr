@@ -28,8 +28,8 @@ const scrollRight = () => {
 
 <template>
   <div class="relative flex items-center justify-center">
-    <font-awesome-icon @click="scrollLeft" class="absolute left-36 z-50" :icon="['fas', 'chevron-left']" />
-    <font-awesome-icon @click="scrollRight" class="absolute right-36 z-50" :icon="['fas', 'chevron-right']"/>
+    <font-awesome-icon @click="scrollLeft" class="absolute left-36 z-50 shadow-2xl" :icon="['fas', 'chevron-left']" />
+    <font-awesome-icon @click="scrollRight" class="absolute right-36 z-50 shadow-2xl" :icon="['fas', 'chevron-right']"/>
     <div id="slider"
          class="flex flex-nowrap items-stretch justify-start gap-16 w-[80%] overflow-x-scroll snap-x snap-mandatory px-10">
 
@@ -42,6 +42,7 @@ const scrollRight = () => {
           :description="card.description"
           :image="card.image"
           :url="card.url"
+          :skills="card.skills"
       />
 
       <div class="w-1/2 flex-shrink-0"></div>
