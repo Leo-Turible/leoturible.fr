@@ -31,7 +31,7 @@ const scrollRight = () => {
     <font-awesome-icon @click="scrollLeft" class="absolute left-36 z-50" :icon="['fas', 'chevron-left']" />
     <font-awesome-icon @click="scrollRight" class="absolute right-36 z-50" :icon="['fas', 'chevron-right']"/>
     <div id="slider"
-         class="flex flex-nowrap items-stretch justify-start gap-16 w-[80%] overflow-x-scroll snap-x snap-mandatory p-10">
+         class="flex flex-nowrap items-stretch justify-start gap-16 w-[80%] overflow-x-scroll snap-x snap-mandatory px-10">
 
       <div class="w-1/2 flex-shrink-0"></div>
 

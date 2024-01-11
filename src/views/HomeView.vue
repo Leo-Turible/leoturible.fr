@@ -63,7 +63,7 @@ const cards = [
     title: 'Agenda',
     description: 'Ce site a été conçu dans le cadre d\'un projet en cours. Il a été réalisé avec le framework backend Symfony. Le but était de créer un site dédié aux étudiants de l\'IUT de Troyes, avec un système de connexion et d\'inscription fonctionnel, ainsi qu\'un système de calendrier pour ajouter des évènements.\n' + '\n',
     image: '/sae301.png',
-    url: 'https://leoturible.fr/sae301'
+    url: 'https://leoturible.fr/sae301/public/'
   }
 ]
 
@@ -124,7 +124,7 @@ onMounted(() => {
       </div>
     </section>
 
-    <section id="realisation" class="fade-in h-screen w-full flex flex-col items-center justify-around snap-center">
+    <section id="realisation" class="fade-in h-screen w-full flex flex-col items-center justify-evenly snap-center">
       <h2 class="text-4xl font-bold dark:text-white">Réalisations</h2>
       <RealisationSlider :cards="cards"/>
     </section>
