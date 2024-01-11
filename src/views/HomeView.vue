@@ -100,7 +100,7 @@ onMounted(() => {
       </div>
       <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center w-full">
         <div class="flex items-center justify-center sm:flex-1 sm:basis-1/3">
-          <img src="/fallout.webp" alt="Photo de profil" class="w-48 h-48 rounded-full object-cover mb-4 sm:mb-0">
+          <img src="/pp.webp" alt="Photo de profil" class="w-48 h-48 rounded-full object-cover mb-4 sm:mb-0">
         </div>
         <div
             class="flex flex-col items-center justify-center sm:flex-1 gap-5 sm:basis-2/3 px-2 sm:px-10 py-5 bg-slate-100 rounded-xl shadow-xl">
