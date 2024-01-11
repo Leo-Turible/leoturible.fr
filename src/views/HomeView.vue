@@ -155,6 +155,9 @@ onMounted(() => {
           <a href="mailto:turibleleo@gmail.com"
              class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110"><font-awesome-icon icon="envelope" />  Envoyez-moi
             un email</a>
+          <a href="/cv_leo_turible.pdf" download class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110">
+            Télécharger mon CV
+          </a>
         </div>
       </div>
       <footer class="absolute bottom-0 h-10 w-full opacity-75 flex items-center justify-center bg-slate-500 dark:bg-gray-800">
