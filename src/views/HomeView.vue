@@ -33,7 +33,7 @@ const cards = [
   {
     id: 1,
     title: 'Fallout',
-    description: 'Ce site a été conçu sur le thème de l\'univers de Fallout. Il a été réalisé en HTML, CSS et JavaScript dans le cadre d\'un projet en cours. J\'y ai fait mes premiers pas avec JavaScript afin d\'implémenter un système de musique que l\'on peut mute/unmute et afin de permettre à l\'utilisateur de savoir sur quelle page il se trouve grâce à une classe active dans le header.html.',
+    description: 'Ce site a été conçu sur le thème de l\'univers de Fallout. Il a été réalisé dans le cadre d\'un projet en cours. J\'y ai fait mes premiers pas avec JavaScript afin d\'implémenter un système de musique que l\'on peut mute/unmute et afin de permettre à l\'utilisateur de savoir sur quelle page il se trouve.',
     image: '/fallout.webp',
     url: '/fallout',
     skills: ['html', 'css', 'js']
@@ -49,7 +49,7 @@ const cards = [
   {
     id: 3,
     title: 'Ghibli',
-    description: 'Ce site a été conçu sur le thème de l\'univers des studios Ghibli. Il a été réalisé en HTML, CSS et PHP dans le cadre d\'un projet en cours. Le but était de créer un formulaire fonctionnel et sécurisé, ainsi qu\'une gallerie d\'image avec la possibilité d\'en ajouter.\n' + '\n',
+    description: 'Ce site a été conçu sur le thème de l\'univers des studios Ghibli. Il a été réalisé dans le cadre d\'un projet en cours. Le but était de créer un formulaire fonctionnel et sécurisé, ainsi qu\'une gallerie d\'image avec la possibilité d\'en ajouter.\n' + '\n',
     image: '/ghibli.webp',
     url: 'https://mmi22g12.sae105.ovh/',
     skills: ['html', 'css', 'php']
@@ -57,7 +57,7 @@ const cards = [
   {
     id: 4,
     title: 'Parooling',
-    description: 'Ce site a été conçu dans le cadre d\'un projet en cours. Il a été réalisé en HTML, CSS et PHP. Le but était de créer un site de covoiturage avec un système de connexion et d\'inscription fonctionnel, ainsi qu\'un système de recherche de trajet.\n' + '\n',
+    description: 'Ce site a été conçu dans le cadre d\'un projet en cours. Le but était de créer un site de covoiturage avec un système de connexion et d\'inscription fonctionnel, ainsi qu\'un système de recherche de trajet.\n' + '\n',
     image: '/parooling_desktop.png',
     url: 'https://mmi22g12.sae202.ovh/',
     skills: ['html', 'css', 'php', 'mysql']
@@ -65,7 +65,7 @@ const cards = [
   {
     id: 5,
     title: 'Agenda',
-    description: 'Ce site a été conçu dans le cadre d\'un projet en cours. Il a été réalisé avec le framework backend Symfony. Le but était de créer un site dédié aux étudiants de l\'IUT de Troyes, avec un système de connexion et d\'inscription fonctionnel, ainsi qu\'un système de calendrier pour ajouter des évènements.\n' + '\n',
+    description: 'Ce site a été conçu dans le cadre d\'un projet en cours. Il a été réalisé avec le framework Symfony. Le but était de créer un site dédié aux étudiants de l\'IUT de Troyes, avec un système de connexion et d\'inscription fonctionnel, ainsi qu\'un système de calendrier pour ajouter des évènements.\n' + '\n',
     image: '/sae301.png',
     url: 'https://leoturible.fr/sae301/public/',
     skills: ['html', 'sass', 'symfony']
@@ -154,13 +154,20 @@ onMounted(() => {
           Réseaux sociaux</h2>
         <div class="flex flex-col items-center justify-center gap-5">
           <a href="https://www.linkedin.com/in/leoturible/" target="_blank"
-             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110"><font-awesome-icon :icon="['fab', 'linkedin']" /> LinkedIn</a>
+             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110">
+            <font-awesome-icon :icon="['fab', 'linkedin']"/>
+            LinkedIn</a>
           <a href="https://github.com/Leo-Turible" target="_blank"
-             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110"><font-awesome-icon :icon="['fab', 'github']" /> GitHub</a>
+             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110">
+            <font-awesome-icon :icon="['fab', 'github']"/>
+            GitHub</a>
           <a href="mailto:turibleleo@gmail.com"
-             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110"><font-awesome-icon icon="envelope" />  Envoyez-moi
+             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110">
+            <font-awesome-icon icon="envelope"/>
+            Envoyez-moi
             un email</a>
-          <a href="/cv_leo_turible.pdf" download class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110">
+          <a href="/cv_leo_turible.pdf" download
+             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110">
             Télécharger mon CV
           </a>
         </div>
