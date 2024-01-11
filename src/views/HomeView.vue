@@ -161,7 +161,7 @@ onMounted(() => {
         </div>
       </div>
       <footer class="absolute bottom-0 h-10 w-full opacity-75 flex items-center justify-center bg-slate-500">
-        <p class="text-gray-100 ">© 2021 Léo Turible. Tous droits réservés.</p>
+        <p class="text-gray-100 ">© 2024 Léo Turible. Tous droits réservés.</p>
       </footer>
     </section>
   </main>
