@@ -150,7 +150,7 @@ onMounted(() => {
 
     <section class="relative fade-in h-screen w-full flex flex-col items-center justify-center snap-center">
       <div class="h-full w-full text-center flex flex-col items-center justify-start gap-28">
-        <h2 class="mt-8 mb-4 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl text-center">
+        <h2 class="mt-8 mb-4 text-3xl font-bold text-gray-900 md:text-4xl text-center">
           Réseaux sociaux</h2>
         <div class="flex flex-col items-center justify-center gap-5">
           <a href="https://www.linkedin.com/in/leoturible/" target="_blank"
