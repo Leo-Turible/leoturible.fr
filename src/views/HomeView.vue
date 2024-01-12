@@ -5,15 +5,13 @@ import ContactForm from '../components/ContactForm.vue'
 import {onMounted, nextTick} from 'vue';
 
 onMounted(() => {
-  console.log('onMounted called');
   nextTick(() => {
-    console.log('nextTick called');
     const elements = document.querySelectorAll('.fade-in');
 
     const observer = new IntersectionObserver((entries) => {
-      console.log('IntersectionObserver callback called');
+
       entries.forEach(entry => {
-        console.log('IntersectionObserver entry:', entry);
+
         if (entry.isIntersecting) {
           entry.target.classList.add('is-visible');
         } else {

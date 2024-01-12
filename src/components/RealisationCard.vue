@@ -1,20 +1,25 @@
 <script setup>
-import {defineProps} from 'vue'
+import {defineProps, computed} from 'vue'
 
-defineProps({
+const props = defineProps({
   title: String,
   description: String,
   image: String,
   url: String,
   skills: Array
 })
+
+const imageName = computed(() => {
+  // Extraire le nom du fichier sans l'extension
+  return props.image ? props.image.split('/').pop().split('.')[0] : '';
+});
 </script>
 
 <template>
   <div
       class="card-realisation snap-center flex flex-col items-center justify-start h-auto max-w-72 w-full min-h-96 bg-slate-50 rounded-xl flex-shrink-0 overflow-hidden shadow-2xl">
     <div class="card-realisation__img max-w-full">
-      <img :src="image" alt="" class="">
+      <img :src="image" :alt="`Image du site ${imageName}`" class="">
     </div>
     <div class="skills flex items-center justify-around w-full border-slate-900 border-y-2 py-1.5">
       <img v-for="skill in skills" :src="`/ico/${skill}.svg`" :alt="skill" key="skill" class="h-10">
