@@ -29,7 +29,8 @@ const imageName = computed(() => {
         {{ title }}</h3>
       <p class="card-realisation__description text-justify p-3.5 text-gray-500">{{ description }}</p>
       <a :href="url"
-         class="card-realisation__discover-link self-center px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110 mt-auto">Découvrir</a>
+         class="card-realisation__discover-link self-center px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110 mt-auto"
+         :title="`Découvrir ${imageName}`">Découvrir</a>
     </div>
   </div>
 </template>
