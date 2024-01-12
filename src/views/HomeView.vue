@@ -152,20 +152,20 @@ onMounted(() => {
           Réseaux sociaux</h2>
         <div class="flex flex-col items-center justify-center gap-5">
           <a href="https://www.linkedin.com/in/leoturible/" target="_blank"
-             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110">
+             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110" title="LinkedIn de Leo Turible">
             <font-awesome-icon :icon="['fab', 'linkedin']"/>
             LinkedIn</a>
           <a href="https://github.com/Leo-Turible" target="_blank"
-             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110">
+             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110" title="GitHub de Leo Turible">
             <font-awesome-icon :icon="['fab', 'github']"/>
             GitHub</a>
           <a href="mailto:turibleleo@gmail.com"
-             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110">
+             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110" title="Adresse email de Leo Turible">
             <font-awesome-icon icon="envelope"/>
             Envoyez-moi
             un email</a>
           <a href="/cv_leo_turible.pdf" download
-             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110">
+             class="px-10 py-2.5 m-3.5 bg-indigo-500 text-white rounded-xl transition ease-in-out hover:bg-indigo-300 hover:scale-110" title="CV de Leo Turible">
             Télécharger mon CV
           </a>
         </div>
